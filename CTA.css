@@ -11,8 +11,7 @@ body {
     max-width: 400px;
     margin: 50px auto;
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    justify-content: center;
 }
 
 .cta-box {
@@ -20,36 +19,47 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    width: 100%;
 }
 
-.cta-box h2 {
+.cta-box h2, .cta-box p {
     color: #ffffff;
+    text-align: left;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: bold;
 }
 
 input[type="text"] {
-    width: 90%;
+    width: calc(100% - 20px);
     padding: 10px;
-    margin: 10px 0;
-    border: none;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
     border-radius: 5px;
     background: white;
     color: black;
     font-size: 16px;
+    display: block;
 }
 
 .cta-button {
-    display: inline-block;
-    padding: 10px 20px;
+    width: 100%;
+    padding: 10px;
     background: #ffffff;
     color: black;
     text-decoration: none;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
     transition: background 0.3s, color 0.3s;
 }
 
 .cta-button:hover {
     background: #cccccc;
 }
-
