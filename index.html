@@ -8,24 +8,27 @@
 </head>
 <body>
     <div class="cta-container">
-        <div class="cta-box">
+        <form class="cta-box">
             <h2>Join Our Newsletter</h2>
             <p>Stay updated with the latest news and offers.</p>
-            <input type="text" placeholder="Enter your email">
-            <button class="cta-button">Subscribe Now</button>
-        </div>
-        <div class="cta-box">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email">
+            <button type="submit" class="cta-button">Subscribe Now</button>
+        </form>
+        <form class="cta-box">
             <h2>Start Your Free Trial</h2>
             <p>Experience our product with a 14-day free trial.</p>
-            <input type="text" placeholder="Enter your name">
-            <button class="cta-button">Get Started</button>
-        </div>
-        <div class="cta-box">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+            <button type="submit" class="cta-button">Get Started</button>
+        </form>
+        <form class="cta-box">
             <h2>Contact Us</h2>
             <p>Have questions? Get in touch with our support team.</p>
-            <input type="text" placeholder="Enter your message">
-            <button class="cta-button">Contact Support</button>
-        </div>
+            <label for="message">Message:</label>
+            <input type="text" id="message" name="message" placeholder="Enter your message">
+            <button type="submit" class="cta-button">Contact Support</button>
+        </form>
     </div>
 </body>
 </html>
